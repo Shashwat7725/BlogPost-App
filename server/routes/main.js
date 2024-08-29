@@ -68,7 +68,7 @@ router.post("/search", async (req, res) => {
     ],
   });
 
-  res.render("search_result", { data, locals });
+  res.render("search_result", { data, locals, currentRoute: "/" });
 });
 router.get("/about", (req, res) => {
   res.render("about", {
